@@ -1,0 +1,385 @@
+body{
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            
+            margin: 0;
+            padding: 0;
+        }
+        .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+   .clearfloat{zoom:1}
+
+        .fujianBtn{
+            color: #007aff;
+            cursor: pointer;
+        }
+        .fujianBox{
+            width: 465px;
+            height: 465px;
+            border: 1px solid #c9c9c9;
+            box-sizing: border-box;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -223px 0 0 -232px;
+            z-index:999999;    background: #ffffff;
+        }
+        .fujianBoxTop{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            border-bottom: 1px solid #c9c9c9;
+            box-sizing: border-box;
+            text-align: left;
+            padding: 0 0 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #797979; 
+            position: relative;
+        }
+        .fujianBoxTop>i{
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .fujianBoxTop>span{
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(close.png) center no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+        }
+        .fujianBoxBot{
+            width: 100%;
+            height: calc(100% - 90px);
+            box-sizing: border-box;
+            padding: 20px 30px 15px;
+        }
+        .fujianBoxBtn{
+            width: 113px;
+            height: 30px;
+            display: block;
+            background: #3394f5;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 2px;
+        }
+        .fujianBoxBtndisab{
+            background: #bcbcbc;
+        }
+        .fujianBoxBtn span{  cursor: pointer;
+        }
+        .fujianBoxBtn input{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            -ms-filter: 'alpha(opacity=0)';
+            width: 100%;
+            height: 100%;
+            display: block;    cursor: pointer;
+        }
+        .fujianItemBox{
+            width: 100%;
+            min-height: 0;
+            max-height: 300px;
+            border: 1px solid #d7d7d7;
+            margin-top: 10px;
+            display: none;
+        }
+        .fujianItem{
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            border-bottom: 1px dotted #d7d7d7;
+            background: #f2f2f2;
+            padding: 10px 15px 0 30px
+        }
+        .fujianItem>div{
+            width: 100%;
+        }
+        .fujianItemP{
+            float: left;
+            font-size: 14px;
+            line-height: 22px;
+            margin: 0;
+            padding: 0;
+        }
+        .fujianItemName{
+            color: #333333;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: inline-block;
+            max-width: 220px;
+        }
+        .fujianItemSize{
+            color: #BCBCBC;
+            vertical-align: top;
+        }
+        .fujianItemBtn{
+            float: right;
+            font-size: 14px;
+            color: #007aff;
+            line-height: 25px;
+            margin: 0;
+            padding: 0;
+        }
+        .fujianItemBtn>span{
+            cursor: pointer;
+        }
+        .shanchuBtn{
+            margin-left: 5px;
+        }
+        .fujianItembottom{
+            width: 192px;
+        }
+        .wanch{
+            width: 92px;color:#BCBCBC
+        }
+        .fujianItemJin{
+            width: 150px;
+            height: 8px;
+            background: #cccccc;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            float: left;
+        }
+        .fujianItemJin>span{
+            display: inline-block;
+            height: 100%;
+            background: #7ed04f;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            border-radius: 15px;
+        }
+        .fujianItemJinNum{
+            font-size: 12px;
+            line-height: 8px;
+            color: #666666;
+            float: left;
+            margin-left: 7px;
+        }
+        .fujianFootBox{
+ 	        width: fit-content;
+            width: -moz-fit-content;
+            width: -webket-fit-content;
+            margin: 0px auto 0;
+        }
+        .fujianFootBox>button{
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .fujianFootBox>button:first-child{
+            margin-right: 10px;
+            background: #007aff;
+            color: #fff;
+            border: 0;
+        }
+        .TpsBOX{
+            width: 386px;
+            height: 149px;
+            border: 1px solid #c9c9c9;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -74px 0 0 -193px;
+            display: none;
+            z-index:9999999;
+            background:#ffffff;
+        }
+        .TpsBOXP{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: left;
+            box-sizing: border-box;
+            padding:0 0 0  20px;
+            font-size: 16px;
+            color: #797979;
+            position: relative;
+            font-weight: bold;
+        }
+        .TpsBOXP>span{
+
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(close.png) center no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+        }
+        .TpsBOXCont{
+            width: 100%;
+            padding: 0 55px 0 55px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+        .TpsBOXBtn{
+            width: fit-content;
+            width: -moz-fit-content;
+            width: -webket-fit-content;
+            margin: 10px auto 0;
+        }
+        .TpsBOXBtnOk{
+            width: 110px;
+            height: 30px;
+        }
+
+
+        .TpsBOX2{
+            width: 386px;
+            height: 149px;
+            border: 1px solid #c9c9c9;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -74px 0 0 -193px;
+            display: none;
+            z-index:9999999;
+            background:#ffffff;
+        }
+        .TpsBOXP2{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: left;
+            box-sizing: border-box;
+            padding:0 0 0  20px;
+            font-size: 16px;
+            color: #797979;
+            position: relative;
+            font-weight: bold;
+        }
+        .TpsBOXP2>span{
+
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(close.png) center no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+        }
+        .TpsBOXCont2{
+            width: 100%;
+            padding: 0 55px 0 55px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            box-sizing: border-box;
+            margin-top: 10px;
+            min-height: 40px;
+        }
+        .TpsBOXfoot2{
+            width: fit-content;
+            width: -moz-fit-content;
+            width: -webket-fit-content;
+            margin: 10px auto 0;
+        }
+        .TpsBOXfoot2>button{
+            width: 110px;
+            height: 30px;
+        }
+        .TpsBOXfoot2>button:first-child{
+            margin-right: 10px;
+        }
+        #progress{
+
+            width: 300px;
+
+            height: 20px;
+
+            background-color:#f7f7f7;
+
+            box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);
+
+            border-radius:4px;
+
+            background-image:linear-gradient(to bottom,#f5f5f5,#f9f9f9);
+            
+            position: relative;
+
+        }
+
+ 
+
+ 
+
+        #finish{
+
+            background-color: #149bdf;
+
+            background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+
+            background-size:40px 40px;
+
+            height: 100%;
+
+        }
+
+        form{
+
+            margin-top: 50px;
+
+        }
+
+
+        .jin1{
+            width: 500px;
+            margin-left: 50px;
+            font-size: 16px;
+            color: #000;
+        }
+        .jin1 h2{
+            font-size: 16px;
+            display: none;
+            color: #000;
+        }
+
+        .jin1 h5{
+            width: 100%;
+            height: 25px;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: #b82cdd;
+        }
+        .jin1 div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 25px;
+            /*background-color: pink;*/
+        }
+        .jin1 p{
+            position:absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            line-height: 5px;
+        }
+        .showactive{display:block;}

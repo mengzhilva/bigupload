@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document</title>
+    <script type="text/javascript" src="<?=$_G['res_path']?>/bannerindex/js/jquery.js"></script>
+   
+
+</head>
+
+<body>
+    <p class="fujianBtn" files='[{"id":0,"filename":"1.jpg","showfilename":"1.jpg","filesize":"0.14","path":"//uploads/tmp//624f0450125822b3dae062d89dc57a78.jpg"},{"id":1,"filename":"2.jpg","showfilename":"2.jpg","filesize":"0.11","path":"//uploads/tmp//ef04db383e80b8d89f32b06ef525299c.jpg"}]'>附件</p>
+    
+<link rel="stylesheet" type="text/css" href="<?=$_G['res_path']?>css/bigupload.css?v=<?php echo FT_VERSION; ?>"/>
+<script type="text/javascript" src="<?=$_G['res_path']?>js/bigupload.js?v=<?php echo FT_VERSION; ?>"></script>
+
+<script>
+
+var bigUpload = new bigUpload();
+$(".fujianBtn").click(function(){
+//初始化，todo，是否是查看模式，初始已经上传的文件，
+var files = $(this).attr('files');
+if(typeof(files)!='undefined')
+files = JSON.parse(files)
+bigUpload.config({'number':'5','readonly':'0',"files":files,'allzipname':"全部下载"})
+
+bigUpload.finish = function(){
+	var res = bigUpload.getallfile();
+	var lens = res.length;
+	res = JSON.stringify(res);
+	$(".fujianBtn").attr('files',res)
+	$(".fujianBtn").html('附件（'+lens+"）")
+	console.log(res);
+}
+})
+</script>
+</body>
+
+</html>
